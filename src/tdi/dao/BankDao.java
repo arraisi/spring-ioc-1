@@ -51,7 +51,11 @@ public class BankDao {
 	
 	@Transactional(readOnly = false)
 	public void hapusPerpusHibernate(Perpustakaan perpus) { 
-		sessionFactory.getCurrentSession().delete(perpus);;
+		sessionFactory.getCurrentSession()
+		.createQuery("delete from Book a where a.perpustakaan.idPerpustakaan = :id ")
+		.setParameter("id", perpus.getIdPerpustakaan())
+		.executeUpdate();
+		sessionFactory.getCurrentSession().delete(perpus); 
 	}
 	
 	

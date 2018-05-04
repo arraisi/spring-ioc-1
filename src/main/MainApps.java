@@ -98,7 +98,7 @@ public class MainApps {
 		perpus.setDaftarBuku(daftarBuku);
 		perpus.setNamaPerpustakaan("perpustakaanXXXCC 1 ");
 		
-		bankDao.simpanPerpusHibernate(perpus);
+		//bankDao.simpanPerpusHibernate(perpus);
 		
 		perpus = new Perpustakaan();
 		perpus.setIdPerpustakaan(5);

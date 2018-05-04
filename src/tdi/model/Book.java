@@ -30,7 +30,7 @@ public class Book {
 	private boolean isPinjam;
 	
 	 
-	@OneToOne( fetch = FetchType.LAZY ,cascade=CascadeType.ALL)
+	@OneToOne( fetch = FetchType.LAZY ,cascade=CascadeType.ALL,  orphanRemoval=true)
 	@JoinColumn(name="ID_PERPUS")
     private Perpustakaan perpustakaan;
 	 

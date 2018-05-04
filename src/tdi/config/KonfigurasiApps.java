@@ -27,8 +27,7 @@ import tdi.model.Person;
 @EnableTransactionManagement
 public class KonfigurasiApps {
 
-	@Autowired
-	private Environment env;
+	 
 
 	@Bean
 	public LocalSessionFactoryBean getSessionFactory() {
@@ -41,7 +40,10 @@ public class KonfigurasiApps {
 		props.put("hibernate.hbm2ddl.auto", "update");
 
 		factoryBean.setHibernateProperties(props);
-		factoryBean.setAnnotatedClasses(Bank.class,Person.class,Adress.class,Book.class,Perpustakaan.class);
+		factoryBean
+		.setAnnotatedClasses(Bank.class,
+				Person.class,Adress.class,
+				Book.class,Perpustakaan.class);
 		return factoryBean;
 	}
 
