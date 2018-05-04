@@ -8,11 +8,11 @@ import tdi.dao.LuasDao;
 
 public class Volume implements VolService{
 	@Autowired
-	private LuasDao luas;
+	private LuasDao luasDua;
 	
 	public double hitungLuasTinggi(double panjang, double lebar,double tinggi) {
-		System.out.println(" luas  = "+luas.hitungLuas(panjang, lebar));
-		return luas.hitungLuas(panjang, lebar)*tinggi;
+		System.out.println(" luas  = "+luasDua.hitungLuas(panjang, lebar));
+		return luasDua.hitungLuas(panjang, lebar)*tinggi;
 	}
 	
 

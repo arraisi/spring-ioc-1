@@ -7,8 +7,11 @@ import tdi.dao.LuasDao;
 
 @Component("volService")
 public class VolumeDua implements VolService{
+	
 	@Autowired
 	private LuasDao luas;
+	
+	
 	
 	public double hitungLuasTinggi(double panjang, double lebar,double tinggi) {
 		System.out.println(" luas dua  = "+luas.hitungLuas(panjang, lebar));

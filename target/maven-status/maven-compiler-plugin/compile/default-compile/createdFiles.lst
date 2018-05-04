@@ -1,3 +1,11 @@
-tdi\HelloWorldConfig.class
+tdi\service\Volume.class
+tdi\service\VolumeDua.class
 main\MainApps.class
+tdi\dao\LuasDao.class
+tdi\dao\LuasSegitiga.class
+tdi\dao\Luas.class
+tdi\HelloWorldConfig.class
+tdi\config\KonfigurasiApps.class
 tdi\HelloWorld.class
+tdi\model\Bank.class
+tdi\service\VolService.class
